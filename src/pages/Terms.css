@@ -1,0 +1,37 @@
+/* src/Terms.css */
+.terms-page {
+
+  background-color: #f5f5f5;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+.text-custom-blue {
+  color: #003087;
+}
+
+.btn-custom-blue {
+  background-color: #003087;
+  border-color: #003087;
+  color: white;
+}
+
+.btn-custom-blue:hover {
+  background-color: #002766;
+  border-color: #002766;
+}
+
+.terms-content {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

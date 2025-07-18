@@ -1,0 +1,1 @@
+// Navbar.jsx will be generated later

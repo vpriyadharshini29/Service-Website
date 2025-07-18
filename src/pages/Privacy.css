@@ -1,0 +1,82 @@
+/* src/Privacy.css */
+.privacy-page {
+ 
+  background-color: #f5f5f5;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.text-custom-blue {
+  color: #003087;
+}
+
+.privacy-content {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.privacy-content a {
+  text-decoration: none;
+}
+
+.privacy-content a:hover {
+  text-decoration: underline;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom-blue {
+  background-color: #003087;
+  border-color: #003087;
+  color: white;
+}
+
+.btn-custom-blue:hover {
+  background-color: #002766;
+  border-color: #002766;
+}/* src/Privacy.css */
+.privacy-page {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.text-custom-blue {
+  color: #003087;
+}
+
+.privacy-content {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.privacy-content a {
+  text-decoration: none;
+}
+
+.privacy-content a:hover {
+  text-decoration: underline;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom-blue {
+  background-color: #003087;
+  border-color: #003087;
+  color: white;
+}
+
+.btn-custom-blue:hover {
+  background-color: #002766;
+  border-color: #002766;
+}

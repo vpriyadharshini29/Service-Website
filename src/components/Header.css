@@ -1,0 +1,256 @@
+/* Global Box-Sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar-custom {
+  background-color: #4B69A9;
+  height: clamp(60px, 10vw, 80px);
+  display: flex;
+  align-items: center;
+  padding: clamp(10px, 2vw, 15px) clamp(10px, 2.5vw, 20px);
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.logo-img {
+  width: clamp(50px, 8vw, 60px);
+  height: clamp(50px, 8vw, 60px);
+  border-radius: 50%;
+  background: #F5F5F5;
+  margin-right: clamp(8px, 2vw, 10px);
+  object-fit: cover;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  color: #F5F5F5;
+  white-space: nowrap;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: clamp(15px, 3vw, 20px);
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.nav-links .nav-item {
+  color: #F5F5F5;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-item:hover {
+  color: #ffffff;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: " ▼";
+  font-size: clamp(10px, 2vw, 12px);
+  color: #F5F5F5;
+  vertical-align: middle;
+}
+
+.dropdown-menu-custom {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #4B69A9;
+  padding: 0;
+  margin-top: clamp(5px, 1.5vw, 8px);
+  list-style: none;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  min-width: clamp(120px, 30vw, 150px);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.dropdown:hover .dropdown-menu-custom {
+  display: block;
+}
+
+.dropdown-item-custom {
+  padding: clamp(8px, 2vw, 10px) clamp(12px, 2.5vw, 20px);
+  color: #F5F5F5;
+  text-decoration: none;
+  display: block;
+  font-size: clamp(0.85rem, 2.3vw, 0.9rem);
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item-custom:hover {
+  background-color: #3b5494;
+}
+
+/* Quote Button */
+.quote-btn {
+  background-color: #F5F5F5;
+  color: #4B69A9;
+  font-weight: 600;
+  padding: clamp(8px, 2vw, 10px) clamp(12px, 2.5vw, 20px);
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quote-btn:hover {
+  background-color: #e2e2e2;
+  color: #4B69A9;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .navbar-custom {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    padding: clamp(10px, 2vw, 15px) clamp(10px, 2vw, 20px);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-top: clamp(8px, 2vw, 10px);
+    gap: clamp(8px, 2vw, 10px);
+  }
+
+  .nav-links .nav-item {
+    padding: clamp(8px, 2vw, 10px) 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown-menu-custom {
+    position: static;
+    box-shadow: none;
+    margin-top: 0;
+    border-radius: 0;
+    background-color: #3b5494;
+    max-width: 100%;
+  }
+
+  .dropdown:hover .dropdown-menu-custom {
+    display: block;
+  }
+
+  .quote-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: clamp(8px, 2vw, 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding: clamp(8px, 2vw, 12px) clamp(8px, 2vw, 15px);
+  }
+
+  .logo-img {
+    width: clamp(40px, 7vw, 50px);
+    height: clamp(40px, 7vw, 50px);
+  }
+
+  .brand-name {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+  }
+
+  .nav-links .nav-item {
+    font-size: clamp(0.8rem, 2.3vw, 0.95rem);
+  }
+
+  .dropdown-item-custom {
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
+    padding: clamp(6px, 1.5vw, 8px) clamp(10px, 2vw, 15px);
+  }
+
+  .quote-btn {
+    padding: clamp(6px, 1.5vw, 8px) clamp(10px, 2vw, 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-custom {
+    padding: clamp(6px, 1.5vw, 10px) clamp(6px, 1.5vw, 10px);
+  }
+
+  .logo-img {
+    width: clamp(35px, 6vw, 45px);
+    height: clamp(35px, 6vw, 45px);
+  }
+
+  .brand-name {
+    font-size: clamp(0.9rem, 2.8vw, 1.2rem);
+  }
+
+  .nav-links {
+    gap: clamp(6px, 1.5vw, 8px);
+  }
+
+  .nav-links .nav-item {
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+  }
+
+  .dropdown-menu-custom {
+    min-width: 100%;
+  }
+
+  .dropdown-item-custom {
+    padding: clamp(6px, 1.5vw, 8px) clamp(8px, 1.8vw, 12px);
+  }
+
+  .quote-btn {
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+    padding: clamp(6px, 1.5vw, 8px) clamp(8px, 1.8vw, 12px);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-custom {
+    padding: clamp(5px, 1.2vw, 8px) clamp(5px, 1.2vw, 8px);
+  }
+
+  .logo-img {
+    width: clamp(30px, 5.5vw, 40px);
+    height: clamp(30px, 5.5vw, 40px);
+  }
+
+  .brand-name {
+    font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+  }
+
+  .nav-links .nav-item {
+    font-size: clamp(0.7rem, 1.8vw, 0.85rem);
+  }
+
+  .dropdown-item-custom {
+    font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+    padding: clamp(5px, 1.2vw, 7px) clamp(7px, 1.5vw, 10px);
+  }
+
+  .quote-btn {
+    font-size: clamp(0.7rem, 1.8vw, 0.85rem);
+    padding: clamp(5px, 1.2vw, 7px) clamp(7px, 1.5vw, 10px);
+  }
+}
