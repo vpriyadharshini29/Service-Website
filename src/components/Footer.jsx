@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-
+ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="footer text-white">
@@ -49,14 +49,17 @@ export default function Footer() {
               </div>
 
               {/* Useful Links */}
-              <div className="col-md-4 col-12 mb-3">
-                <h6 className="fw-bold">Useful Links</h6>
-                <ul className="list-unstyled">
-                  <li><a href="/terms">Team of use</a></li>
-                  <li><a href="/privacy">Privacy Policy</a></li>
-                  <li><a href="/careers">Careers</a></li>
-                </ul>
-              </div>
+           
+
+<div className="col-md-4 col-12 mb-3">
+  <h6 className="fw-bold">Useful Links</h6>
+  <ul className="list-unstyled">
+    <li><Link to="/terms">Terms of Use</Link></li>
+    <li><Link to="/privacy">Privacy Policy</Link></li>
+    <li><Link to="/careers">Careers</Link></li>
+  </ul>
+</div>
+
 
               {/* Social Media Icons */}
               <div className="col-md-4 col-12 mb-3 d-flex flex-column align-items-start">
