@@ -60,7 +60,7 @@ const Careers = () => {
           <div className="mb-3">
             <label className="form-label">Resume<span className="text-danger">*</span></label>
             <div className="resume-upload-box border rounded p-4 text-center">
-              <img src="/pdf-icon.png" alt="PDF Icon" width="40" className="mb-2" />
+              <img src="./Images/pdf.png" alt="PDF Icon" width="40" className="mb-2" />
               <p className="mb-2 text-muted small">Attach your resume in PDF format to ensure Compatibility</p>
               <button type="button" className="btn btn-primary">Upload Resume</button>
               <div className="small text-muted mt-2">Maximum Size : 10 MB</div>
